@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+/* Fluid page container: no fixed viewport-dependent width */
+.page-shell {
+  width: min(100% - 2rem, 72rem);
+  margin-inline: auto;
+  padding-block: clamp(1rem, 3vw, 3rem);
+}
+
+h1 { font-size: clamp(1.6rem, 4vw, 2.5rem); line-height: 1.2; }
+img, svg { max-width: 100%; height: auto; }
