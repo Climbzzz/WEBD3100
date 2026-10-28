@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark"></html>
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Colour System Demo</title>
 
   <link rel="stylesheet" href="css/tokens.css">
@@ -12,7 +11,11 @@
 </head>
 <body>
   <main class="page-shell">
-    <h1>Event Management</h1>
+    <header class="page-header">
+      <h1>Event Management</h1>
+      <button id="theme-toggle" class="button" type="button">Toggle Theme</button>
+    </header>
+
     <section class="card-grid" aria-label="Featured events">
       <article class="card">
         <h2>Community Workshop</h2>
@@ -21,6 +24,7 @@
           <button class="button" type="button">View Events</button>
         </div>
       </article>
+
       <article class="card">
         <h2>Open House</h2>
         <p>Discover upcoming campus activities.</p>
@@ -28,6 +32,38 @@
           <button class="button" type="button">Learn More</button>
         </div>
       </article>
+
+      <article class="card">
+        <h2>Networking Event</h2>
+        <p>Meet local professionals and build connections.</p>
+        <div class="card-actions">
+          <button class="button" type="button">Register</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Technology Expo</h2>
+        <p>Explore technology demonstrations and exhibits.</p>
+        <div class="card-actions">
+          <button class="button" type="button">Register</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="system-messages" aria-label="System messages">
+      <h2>System Messages</h2>
+
+      <div class="alert alert-success">
+        Registration completed successfully.
+      </div>
+
+      <div class="alert alert-warning">
+        Event capacity is almost full.
+      </div>
+
+      <div class="alert alert-error">
+        Registration failed. Please try again.
+      </div>
     </section>
   </main>
 </body>

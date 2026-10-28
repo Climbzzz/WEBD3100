@@ -10,6 +10,15 @@ body {
   line-height: 1.5;
 }
 
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
 /* Fluid page container: no fixed viewport-dependent width */
 .page-shell {
   width: min(100% - 2rem, 72rem);
@@ -19,3 +28,7 @@ body {
 
 h1 { font-size: clamp(1.6rem, 4vw, 2.5rem); line-height: 1.2; }
 img, svg { max-width: 100%; height: auto; }
+
+.system-messages {
+  margin-top: 2rem;
+}

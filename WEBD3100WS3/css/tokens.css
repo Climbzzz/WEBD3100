@@ -1,36 +1,44 @@
 :root {
-  color-scheme: light;
+  /* Primary Blue Ramp */
+  --blue-50: #e6f4ff;
+  --blue-100: #cce9ff;
+  --blue-200: #99d3ff;
+  --blue-300: #66bdff;
+  --blue-400: #33a7ff;
+  --blue-500: #008cff;
+  --blue-600: #007ee6;
+  --blue-700: #005fa8;
+  --blue-800: #00477d;
+  --blue-900: #002e52;
+  --blue-950: #001726;
 
-  /* Foundation tokens */
-  --blue-50: #e6f1fa;
-  --blue-100: #cce3f5;
-  --blue-200: #99c7eb;
-  --blue-500: #004780;
-  --blue-600: #003f73;
-  --blue-700: #003060;
-  --blue-900: #00172f;
+  /* Feedback */
+  --green-500: #16a34a;
+  --yellow-500: #eab308;
+  --red-500: #dc2626;
+  --sky-500: #0ea5e9;
 
-  --neutral-white: #ffffff;
-  --neutral-dark: #111827;
-
-  /* Semantic tokens */
-  --color-background: var(--neutral-white);
-  --color-surface: var(--blue-50);
-  --color-text: var(--neutral-dark);
-  --color-border: var(--blue-200);
+  /* Semantic */
+  --color-background: #ffffff;
+  --color-surface: #f8fafc;
+  --color-text: #0f172a;
+  --color-border: #cbd5e1;
   --color-primary: var(--blue-500);
   --color-primary-hover: var(--blue-600);
-  --color-on-primary: var(--neutral-white);
+  --color-on-primary: #ffffff;
+
+  --color-success: var(--green-500);
+  --color-warning: var(--yellow-500);
+  --color-error: var(--red-500);
+  --color-info: var(--sky-500);
 }
 
 [data-theme="dark"] {
   color-scheme: dark;
-
-  --color-background: #0b1220;
-  --color-surface: #162235;
-  --color-text: #f1f5f9;
-  --color-border: #52627a;
-
+  --color-background: #0f172a;
+  --color-surface: #1e293b;
+  --color-text: #f8fafc;
+  --color-border: #475569;
   --color-primary: var(--blue-100);
   --color-primary-hover: var(--blue-200);
   --color-on-primary: var(--blue-900);
