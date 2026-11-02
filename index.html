@@ -1,30 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>WS-0</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Colour System Demo</title>
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
-	<header>
-		<h1>Welcome</h1>
-	</header>
+  <main class="page-shell">
+    <header class="page-header">
+      <h1>Event Management</h1>
+      <button id="theme-toggle" class="button" type="button">Toggle Theme</button>
+    </header>
 
-	<main>
-		<button id="boo-button" type="button">Click me</button>
-		<p id="boo-message" hidden>boo</p>
-	</main>
+    <section class="card-grid" aria-label="Featured events">
+      <article class="card">
+        <h2>Community Workshop</h2>
+        <p>Explore upcoming events.</p>
+        <div class="card-actions">
+          <button class="button" type="button">View Events</button>
+        </div>
+      </article>
 
-	<script>
-		document.getElementById("boo-button").addEventListener("click", function () {
-			document.getElementById("boo-message").hidden = false;
-		});
-	</script>
+      <article class="card">
+        <h2>Open House</h2>
+        <p>Discover upcoming campus activities.</p>
+        <div class="card-actions">
+          <button class="button" type="button">Learn More</button>
+        </div>
+      </article>
 
-	<footer>
-		<p>WEBD 3100 — Design → Develop → Version → Deploy → Verify</p>
-		<p>&copy; 2025</p>
-	</footer>
+      <article class="card">
+        <h2>Networking Event</h2>
+        <p>Meet local professionals and build connections.</p>
+        <div class="card-actions">
+          <button class="button" type="button">Register</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Technology Expo</h2>
+        <p>Explore technology demonstrations and exhibits.</p>
+        <div class="card-actions">
+          <button class="button" type="button">Register</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="system-messages" aria-label="System messages">
+      <h2>System Messages</h2>
+
+      <div class="alert alert-success">
+        Registration completed successfully.
+      </div>
+
+      <div class="alert alert-warning">
+        Event capacity is almost full.
+      </div>
+
+      <div class="alert alert-error">
+        Registration failed. Please try again.
+      </div>
+    </section>
+  </main>
 </body>
 </html>
-
