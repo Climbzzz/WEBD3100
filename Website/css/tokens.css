@@ -1,45 +1,144 @@
 :root {
-  /* Primary Blue Ramp */
-  --blue-50: #e6f4ff;
-  --blue-100: #cce9ff;
-  --blue-200: #99d3ff;
-  --blue-300: #66bdff;
-  --blue-400: #33a7ff;
-  --blue-500: #008cff;
-  --blue-600: #007ee6;
-  --blue-700: #005fa8;
-  --blue-800: #00477d;
-  --blue-900: #002e52;
-  --blue-950: #001726;
+  /* BRAND PALETTE: project reference colours. */
+  --brand-white: #FFFFFF;
+  --brand-blue: #004780;
+  --brand-dark-grey: #495965;
+  --brand-accent-teal: #00BADC;
+  --brand-accent-turquoise: #5FC5BF;
+  --brand-accent-orange: #F37327;
+  --brand-accent-blue: #2B71B9;
+  --brand-accent-green: #CBDB2A;
+  --brand-accent-fuchsia: #EF426F;
+  --brand-accent-light-blue: #57B7E7;
+  --brand-accent-yellow: #FFEF00;
 
-  /* Feedback */
-  --green-500: #16a34a;
-  --yellow-500: #eab308;
-  --red-500: #dc2626;
-  --sky-500: #0ea5e9;
+  /* FOUNDATION: generated ramps extend the reference palette. Step 500 is your chosen HEX. */
+  --primary-50: #F5FAF9;
+  --primary-100: #E0F1EE;
+  --primary-200: #C1E4DE;
+  --primary-300: #97D2C8;
+  --primary-400: #63BBAC;
+  --primary-500: #2FA490;
+  --primary-600: #2A9482;
+  --primary-700: #237B6C;
+  --primary-800: #1C6256;
+  --primary-900: #103932;
+  --primary-950: #071916;
+  --secondary-50: #F4FCFC;
+  --secondary-100: #DFF6F6;
+  --secondary-200: #BFEDEC;
+  --secondary-300: #95E1E0;
+  --secondary-400: #5FD1D1;
+  --secondary-500: #2AC2C1;
+  --secondary-600: #26AFAE;
+  --secondary-700: #209291;
+  --secondary-800: #197474;
+  --secondary-900: #0F4444;
+  --secondary-950: #061D1D;
+  --accent-50: #F3F7F8;
+  --accent-100: #DCE8EA;
+  --accent-200: #B8D1D5;
+  --accent-300: #89B3B9;
+  --accent-400: #4E8C95;
+  --accent-500: #136672;
+  --accent-600: #115C67;
+  --accent-700: #0E4D56;
+  --accent-800: #0B3D44;
+  --accent-900: #072428;
+  --accent-950: #030F11;
 
-  /* Semantic */
-  --color-background: #ffffff;
-  --color-surface: #f8fafc;
-  --color-text: #0f172a;
-  --color-border: #cbd5e1;
-  --color-primary: var(--blue-500);
-  --color-primary-hover: var(--blue-600);
-  --color-on-primary: #ffffff;
+  /* FOUNDATION: typography. Arial is the default system font. */
+  --font-body: Arial, Helvetica, sans-serif;
+  --font-heading: Arial, Helvetica, sans-serif;
+  --font-ui: var(--font-body);
+  --font-size-base: 16px;
+  --type-ratio: 1.2;
+  --text-step-0: 11.1111px;
+  --text-step-1: 13.3333px;
+  --text-step-2: 16px;
+  --text-step-3: 19.2px;
+  --text-step-4: 23.04px;
+  --text-step-5: 27.648px;
+  --text-step-6: 33.1776px;
+  --text-step-7: 39.8131px;
+  --text-display: clamp(2.04042rem, calc(1.85483rem + 0.79186vw), 2.48832rem);
+--text-h1: clamp(1.70035rem, calc(1.54569rem + 0.65989vw), 2.0736rem);
+--text-h2: clamp(1.41696rem, calc(1.28808rem + 0.5499vw), 1.728rem);
+--text-body: clamp(1rem, calc(1rem + 0vw), 1rem);
+--text-small: clamp(0.83333rem, calc(0.83333rem + 0vw), 0.83333rem);
+  --heading-letter-spacing: -0.02em;
+  --body-letter-spacing: 0em;
+  --body-leading: 1.55;
+  --heading-leading: 1.18;
 
-  --color-success: var(--green-500);
-  --color-warning: var(--yellow-500);
-  --color-error: var(--red-500);
-  --color-info: var(--sky-500);
+  /* FOUNDATION: spacing and corners */
+  --space-unit: 4px;
+  --space-1: calc(var(--space-unit) * 1);
+  --space-2: calc(var(--space-unit) * 2);
+  --space-4: calc(var(--space-unit) * 4);
+  --space-6: calc(var(--space-unit) * 6);
+  --space-8: calc(var(--space-unit) * 8);
+  --space-10: calc(var(--space-unit) * 10);
+  --space-12: calc(var(--space-unit) * 12);
+  --space-16: calc(var(--space-unit) * 16);
+  --space-20: calc(var(--space-unit) * 20);
+  --space-24: calc(var(--space-unit) * 24);
+  --page-max-width: 72rem;
+  --page-gutter: 1rem;
+  --page-gutter-wide: 2rem;
+  --radius-base: 12px;
+
+  /* SEMANTIC: light theme roles */
+  --background: #F3F6FA;
+  --surface: #FFFFFF;
+  --surface-muted: #EDF2F7;
+  --text: #14253A;
+  --text-muted: #53657A;
+  --border: #C5D0DD;
+  --primary: #2FA490;
+  --on-primary: #14253A;
+  --primary-hover: #237B6C;
+  --secondary: #209291;
+  --on-secondary: #14253A;
+  --accent: #136672;
+  --on-accent: #FFFFFF;
+  --success: #15803D;
+  --warning: #A85C00;
+  --danger: #B91C1C;
+  --focus: #9D5700;
+  --control-border: #C5D0DD;
+
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-text: var(--text);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-on-primary: var(--on-primary);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-error: var(--danger);
+  --color-info: var(--secondary);
 }
-
+/* SEMANTIC: dark theme swaps roles, not component rules. */
 [data-theme="dark"] {
   color-scheme: dark;
-  --color-background: #0f172a;
-  --color-surface: #1e293b;
-  --color-text: #f8fafc;
-  --color-border: #475569;
-  --color-primary: var(--blue-100);
-  --color-primary-hover: var(--blue-200);
-  --color-on-primary: var(--blue-900);
+  --background: #0B1422;
+  --surface: #152236;
+  --surface-muted: #20324B;
+  --text: #EEF4FC;
+  --text-muted: #B8C8DB;
+  --border: #60748D;
+  --primary: #97D2C8;
+  --on-primary: #14253A;
+  --primary-hover: #C1E4DE;
+  --secondary: #95E1E0;
+  --on-secondary: #14253A;
+  --accent: #89B3B9;
+  --on-accent: #14253A;
+  --success: #4ADE80;
+  --warning: #FBBF24;
+  --danger: #FCA5A5;
+  --focus: #FBBF24;
+  --control-border: #60748D;
 }
