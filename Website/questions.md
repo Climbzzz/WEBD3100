@@ -1,3 +1,7 @@
+https://github.com/Climbzzz/WEBD3100/tree/main/Website
+
+https://www.figma.com/design/i7TSBHrgAyPpIWI55wgjXP/Workshop-03A-%E2%80%93-Colour-Systems?node-id=0-1&t=SghBw7ELktPByLBl-1
+
 ## Part 3.
 - Orange, dark gray, and light blue
 - Light blue
