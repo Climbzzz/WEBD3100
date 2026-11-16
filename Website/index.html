@@ -2,7 +2,8 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
   <title>Colour System Demo</title>
 
   <link rel="stylesheet" href="css/tokens.css">
@@ -10,61 +11,66 @@
   <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
-  <main class="page-shell">
-    <header class="page-header">
-      <h1>Event Management</h1>
-      <button id="theme-toggle" class="button" type="button">Toggle Theme</button>
-    </header>
+ <main class="page-shell">
 
-    <section class="card-grid" aria-label="Featured events">
-      <article class="card">
-        <h2>Community Workshop</h2>
-        <p>Explore upcoming events.</p>
-        <div class="card-actions">
-          <button class="button" type="button">View Events</button>
-        </div>
-      </article>
+  <header class="page-header">
+    <h1>Event Management</h1>
 
-      <article class="card">
-        <h2>Open House</h2>
-        <p>Discover upcoming campus activities.</p>
-        <div class="card-actions">
-          <button class="button" type="button">Learn More</button>
-        </div>
-      </article>
+    <button
+      id="theme-toggle"
+      class="button"
+      type="button"
+      aria-pressed="true">
+      Switch to light mode
+    </button>
+  </header>
 
-      <article class="card">
-        <h2>Networking Event</h2>
-        <p>Meet local professionals and build connections.</p>
-        <div class="card-actions">
-          <button class="button" type="button">Register</button>
-        </div>
-      </article>
+  <section class="card-grid" aria-label="Featured events">
 
-      <article class="card">
-        <h2>Technology Expo</h2>
-        <p>Explore technology demonstrations and exhibits.</p>
-        <div class="card-actions">
-          <button class="button" type="button">Register</button>
-        </div>
-      </article>
-    </section>
+    <article class="card">
+      <h2>Community Workshop</h2>
+      <p>Explore upcoming events and learn new design skills.</p>
 
-    <section class="system-messages" aria-label="System messages">
-      <h2>System Messages</h2>
-
-      <div class="alert alert-success">
-        Registration completed successfully.
+      <div class="card-actions">
+        <button class="button" type="button">
+          View Events
+        </button>
       </div>
+    </article>
 
-      <div class="alert alert-warning">
-        Event capacity is almost full.
-      </div>
+    <article class="card">
+      <h2>Open House</h2>
+      <p>Discover upcoming campus activities and networking opportunities.</p>
 
-      <div class="alert alert-error">
-        Registration failed. Please try again.
+      <div class="card-actions">
+        <button class="button" type="button">
+          Learn More
+        </button>
       </div>
-    </section>
-  </main>
+    </article>
+
+  </section>
+
+  <section class="system-messages">
+
+    <div class="alert alert-success">
+      <strong>Registration Successful</strong><br>
+      Your place has been confirmed.
+    </div>
+
+    <div class="alert alert-warning">
+      <strong>Session Almost Full</strong><br>
+      Limited seats remain.
+    </div>
+
+    <div class="alert alert-error">
+      <strong>Registration Failed</strong><br>
+      Please try again later.
+    </div>
+
+  </section>
+
+</main>
+<script src="js/theme-toggle.js"></script>
 </body>
 </html>
