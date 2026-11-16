@@ -16,7 +16,7 @@ body {
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem; /* was 1.5rem */
 }
 
 /* Fluid page container: no fixed viewport-dependent width */
@@ -31,4 +31,9 @@ img, svg { max-width: 100%; height: auto; }
 
 .system-messages {
   margin-top: 2rem;
+}
+
+.theme-toggle {
+    width: auto;
+    margin-left: auto;
 }

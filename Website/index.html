@@ -2,75 +2,146 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1">
-  <title>Colour System Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event Management</title>
 
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
- <main class="page-shell">
 
-  <header class="page-header">
-    <h1>Event Management</h1>
+  <main class="page-shell">
 
-    <button
-      id="theme-toggle"
-      class="button"
-      type="button"
-      aria-pressed="true">
-      Switch to light mode
-    </button>
-  </header>
+    <header class="page-header">
+      <h1>Event Management</h1>
 
-  <section class="card-grid" aria-label="Featured events">
+      <button id="theme-toggle" class="button" type="button">
+        Toggle Theme
+      </button>
+    </header>
 
-    <article class="card">
-      <h2>Community Workshop</h2>
-      <p>Explore upcoming events and learn new design skills.</p>
-
-      <div class="card-actions">
-        <button class="button" type="button">
-          View Events
-        </button>
+    <nav aria-label="Main Navigation">
+      <div class="card" style="margin-bottom: 1rem;">
+        <div class="card-actions">
+          <a href="#" class="button">Home</a>
+          <a href="#" class="button">About</a>
+          <a href="#" class="button">Events</a>
+          <a href="#" class="button">Resources</a>
+          <a href="#" class="button">Contact</a>
+        </div>
       </div>
-    </article>
+    </nav>
 
-    <article class="card">
-      <h2>Open House</h2>
-      <p>Discover upcoming campus activities and networking opportunities.</p>
+    <section class="card-grid" aria-label="Featured events">
 
-      <div class="card-actions">
-        <button class="button" type="button">
-          Learn More
-        </button>
+      <article class="card">
+        <h2>Community Workshop</h2>
+
+        <p class="event-meta">📅 November 25, 2026</p>
+        <p class="event-meta">⏰ 6:00 PM</p>
+        <p class="event-meta">📍 Community Centre</p>
+
+        <p>
+          Explore upcoming events and learn new design skills.
+        </p>
+
+        <div class="card-actions">
+          <button
+            class="button"
+            type="button"
+            aria-label="View Community Workshop event">
+            View Events
+          </button>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Open House</h2>
+
+        <p class="event-meta">📅 December 2, 2026</p>
+        <p class="event-meta">⏰ 1:00 PM</p>
+        <p class="event-meta">📍 Campus Atrium</p>
+
+        <p>
+          Discover upcoming campus activities and networking opportunities.
+        </p>
+
+        <div class="card-actions">
+          <button
+            class="button"
+            type="button"
+            aria-label="Learn more about Open House">
+            Learn More
+          </button>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Networking Event</h2>
+
+        <p class="event-meta">📅 December 10, 2026</p>
+        <p class="event-meta">⏰ 7:00 PM</p>
+        <p class="event-meta">📍 Business Hall</p>
+
+        <p>
+          Meet local professionals and build valuable industry connections.
+        </p>
+
+        <div class="card-actions">
+          <button
+            class="button"
+            type="button"
+            aria-label="Register for Networking Event">
+            Register
+          </button>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Technology Expo</h2>
+
+        <p class="event-meta">📅 January 15, 2027</p>
+        <p class="event-meta">⏰ 10:00 AM</p>
+        <p class="event-meta">📍 Innovation Centre</p>
+
+        <p>
+          Explore technology demonstrations and interactive exhibits.
+        </p>
+
+        <div class="card-actions">
+          <button
+            class="button"
+            type="button"
+            aria-label="Register for Technology Expo">
+            Register
+          </button>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="system-messages" aria-label="System messages">
+      <h2>System Messages</h2>
+
+      <div class="alert alert-success">
+        Registration completed successfully.
       </div>
-    </article>
 
-  </section>
+      <div class="alert alert-warning">
+        Event capacity is almost full.
+      </div>
 
-  <section class="system-messages">
+      <div class="alert alert-error">
+        Registration failed. Please try again.
+      </div>
+    </section>
 
-    <div class="alert alert-success">
-      <strong>Registration Successful</strong><br>
-      Your place has been confirmed.
-    </div>
+    <footer style="margin-top: 2rem; text-align: center;">
+      <p>&copy; 2026 Event Management. All rights reserved.</p>
+    </footer>
 
-    <div class="alert alert-warning">
-      <strong>Session Almost Full</strong><br>
-      Limited seats remain.
-    </div>
+  </main>
 
-    <div class="alert alert-error">
-      <strong>Registration Failed</strong><br>
-      Please try again later.
-    </div>
-
-  </section>
-
-</main>
-<script src="js/theme-toggle.js"></script>
 </body>
 </html>
